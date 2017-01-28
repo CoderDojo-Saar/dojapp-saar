@@ -1,2 +1,2 @@
 # dojapp-saar
-Unsere eigene App
+Unsere eigene App.
