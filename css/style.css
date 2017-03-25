@@ -7,13 +7,14 @@ h1 {
   font-family: Courier;
 }
 
-.HauptmenueText {
-  text-decoration: underline;
-}
-
 a {
   color: black;
   text-decoration: none;
   width: auto;
   font-size: 22px;
+}
+
+#Menue {
+	background-color: #87CEFA;
+	height: 50px;
 }
