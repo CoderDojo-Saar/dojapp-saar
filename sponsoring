@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CoderDojo - Start</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/css/uikit.min.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit-icons.min.js"></script>
+        
+    </head>
+    <body>
+        <div class="uk-offcanvas-content">
+			
+			<!-- Sidemenu -->
+			
+			<nav class="uk-navbar uk-navbar-container uk-margin" uk-sticky>
+				<div class="uk-navbar-left">
+					<a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle href="#sidemenu"></a>
+				</div>
+				
+				<div class="uk-navbar-center">
+					<img src="img/logoonlytext-transparent.png" style="height: 50px; "/>
+				</div>
+				
+				<div class="uk-navbar-right">
+					<img src="img/logowithouttext-transparent.png" style="height: 50px;"/>
+				</div>
+			</nav>
+			
+			<div id="sidemenu" uk-offcanvas>
+				<div class="uk-offcanvas-bar">
+
+					<button class="uk-offcanvas-close" type="button" uk-close></button>
+					<ul class="uk-nav uk-nav-default">
+						<li><a href="index.html">Start</a></li>
+						<li><a href="about.html">&Uuml;ber</a></li>
+						<li class="uk-active"><a href="sponsoring.html">Sponsoren</a></li>
+						<li><a href="geonavigation.html">Geonavigation</a></li>
+					</ul>
+
+				</div>
+			</div>
+        
+			<div id="top" class="uk-container">
+				<h2>Sponsoren</h2>
+				<ul class="uk-list uk-list-divider">
+					<li>CoderDojo 8: <a class="uk-link-muted" href="https://www.saarcamp.de">SaarCamp</a></li>
+					<li>CoderDojo 7: <a class="uk-link-muted" href=""></a></li>
+					<li>CoderDojo 6: <a class="uk-link-muted" href="https://www.eurodata.de">eurodata</a></li>
+					<li>CoderDojo 5: <a class="uk-link-muted" href=""></a></li>
+					<li>CoderDojo 4: <a class="uk-link-muted" href=""></a></li>
+					<li>CoderDojo 3: <a class="uk-link-muted" href=""></a></li>
+					<li>CoderDojo 2: <a class="uk-link-muted" href=""></a></li>
+					<li>CoderDojo 1: <a class="uk-link-muted" href=""></a></li>
+				</ul>
+				<br/>
+				<a href="" uk-totop uk-scroll></a>
+			</div>
+		</div>
+	</body>
+</html>
