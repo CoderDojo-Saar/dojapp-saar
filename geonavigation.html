@@ -1,60 +1,68 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>CoderDojo - Start</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/css/uikit.min.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
 
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit-icons.min.js"></script>
-        
-    </head>
-    <body>
-        <div class="uk-offcanvas-content">
-			
-			<!-- Sidemenu -->
-			
-			<nav class="uk-navbar uk-navbar-container uk-margin" uk-sticky>
-				<div class="uk-navbar-left">
-					<a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle href="#sidemenu"></a>
-				</div>
-				
-				<div class="uk-navbar-center">
-					<img src="img/logoonlytext-transparent.png" style="height: 50px; "/>
-				</div>
-				
-				<div class="uk-navbar-right">
-					<img src="img/logowithouttext-transparent.png" style="height: 50px;"/>
-				</div>
-			</nav>
-			
-			<div id="sidemenu" uk-offcanvas>
-				<div class="uk-offcanvas-bar">
+<head>
+	<title>CoderDojo - Start</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/css/uikit.min.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
 
-					<button class="uk-offcanvas-close" type="button" uk-close></button>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit-icons.min.js"></script>
+
+</head>
+
+<body>
+	<div class="uk-offcanvas-content">
+
+		<!-- Sidemenu -->
+		<nav style="border-bottom: 1px solid #dddddd;background-color:white" class="uk-navbar uk-navbar-transparent uk-navbar-container uk-margin"
+		 uk-sticky>
+			<div class="uk-navbar-left">
+				<a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle href="#sidemenu"></a>
+			</div>
+
+			<div class="uk-navbar-center">
+				<img src="img/logoonlytext-transparent.png" style="height: 50px; " />
+			</div>
+
+			<div class="uk-navbar-right">
+				<img src="img/logowithouttext-transparent.png" style="height: 50px;margin-right: 10px;" />
+			</div>
+		</nav>
+
+		<div id="sidemenu" uk-offcanvas>
+			<div class="uk-offcanvas-bar">
+				<div id="sidemenu_logo">
+					<img src="img/logoonlytext-transparent.png" style="height: 50px; " />
+				</div>
+				<button class="uk-offcanvas-close" type="button" uk-close></button>
+				<div style="padding-left: 20px;padding-top: 10px">
 					<ul class="uk-nav uk-nav-default">
 						<li><a href="index.html">Start</a></li>
 						<li><a href="about.html">&Uuml;ber</a></li>
+						<li class="uk-active"><a href="geonavigation.html">Anfahrt</a></li>
+						<li class="uk-nav-divider"></li>
 						<li><a href="sponsoring.html">Sponsoren</a></li>
-						<li><a class="uk-active" href="geonavigation.html">Geonavigation</a></li>
+						<li><a href="impressum.html">Impressum</a></li>
 					</ul>
-
 				</div>
 			</div>
-        
-			<div id="top" class="uk-container">
-				<h2>Geonavigation</h2>
-				Das CoderDojo Saar findet normalerweise immer in dem Ligatura Coworking Space in Saarbr&uumlcken im Quartier Eurobahnhof statt. 
-				Falls das n&aumlchste Treffen an einem anderen Ort stattfinden sollte, w&uumlrde dies hier stehen :)
-				<br/>
-				<a class="uk-button uk-button-default" href="geo:49.2430028,6.9897871">Auf Karte anzeigen</a>
-				<br/>
-				<a href="" uk-totop uk-scroll></a>
-			</div>
 		</div>
-	</body>
+
+		<div id="top" class="uk-container">
+			<h2>Anfahrt</h2>
+			Das CoderDojo Saar findet normalerweise immer in dem Ligatura Coworking Space in Saarbr&uuml;cken im Quartier Eurobahnhof
+			statt. Falls das n&auml;chste Treffen an einem anderen Ort stattfinden sollte, w&uuml;rde dies hier stehen :)
+			<br/>
+			<a class="uk-button uk-button-default" href="geo:49.2430028,6.9897871">Auf Karte anzeigen</a>
+			<br/>
+			<a href="" uk-totop uk-scroll></a>
+		</div>
+	</div>
+</body>
+
 </html>
