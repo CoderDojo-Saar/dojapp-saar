@@ -21,3 +21,11 @@ h1 {
   width: 100%;
   height: 50px;
 }
+
+#first-element {
+	margin-top: 10px;
+}
+
+.uk-nav-default {
+   font-size: 1.25rem;
+}
