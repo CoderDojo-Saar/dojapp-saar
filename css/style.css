@@ -29,3 +29,22 @@ h1 {
 .uk-nav-default {
    font-size: 1.25rem;
 }
+.media-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.media-container .media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+}
