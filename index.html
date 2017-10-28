@@ -23,10 +23,8 @@
 
 	<script>
 		$(document).ready(function () {
-			var date = new Date();
-			console.log(date.getTime() - 1511614800000);
-
-			if (date.getTime() - 1511614800000 <= 172800) {
+			var timeToDojo = 1511614800000 - Date.now();
+			if (timeToDojo > 0 && timeToDojo <= 172800) {
 				UIkit.notification("<span uk-icon='icon: check'></span> Bald nächstes CoderDojo!");
 			}
 
