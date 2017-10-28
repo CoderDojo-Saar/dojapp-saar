@@ -63,6 +63,11 @@ h1 {
   height: 100%;
 }
 
+.xmas-card img {
+  max-width: 50%;
+  height: auto;
+}
+
 .xmas-card--behind {
   position: absolute;
   top: 0;
