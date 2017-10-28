@@ -82,7 +82,7 @@ h1 {
   margin: 1px;
 }
 
-.flip-container:hover .flipper,
+.flip-container.ready:hover .flipper,
 .flip-container.hover .flipper {
   -webkit-transform: rotateY(-95deg);
   transform: rotateY(-95deg);
