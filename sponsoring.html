@@ -12,7 +12,13 @@
 	<script src="uikit/js/uikit.min.js"></script>
 	<script src="uikit/js/uikit-icons.min.js"></script>
 
+	<script src="js/sidemenu.js"></script>
 
+	<script>
+		var activeMenuId = 'sponsors';
+	</script>
+
+	<script src="js/page.js"></script>
 </head>
 
 <body>
@@ -43,17 +49,7 @@
 				</div>
 				<button class="uk-offcanvas-close" type="button" uk-close></button>
 				<div style="padding-left: 20px;padding-top: 10px">
-					<ul class="uk-nav uk-nav-default">
-						<li><a href="index.html">Start</a></li>
-						<li><a href="about.html">&Uuml;ber</a></li>
-						<li><a href="anmeldung.html">Anmeldung</a></li>
-						<li><a href="geonavigation.html">Anfahrt</a></li>
-						<li><a href="kontaktmöglichkeiten.html">Kontaktm&ouml;glichkeiten</a></li>
-						<li><a href="bildergalerie.html">Bildergalerie</a></li>
-						<li class="uk-nav-divider"></li>
-						<li class="uk-active"><a href="sponsoring.html">Sponsoren</a></li>
-						<li><a href="impressum.html">Impressum</a></li>
-					</ul>
+					<ul id="sidemenu_menuitems" class="uk-nav uk-nav-default"></ul>
 				</div>
 			</div>
 		</div>
@@ -61,16 +57,37 @@
 		<div id="top" class="uk-container">
 			<h2>Sponsoren</h2>
 			<ul class="uk-list uk-list-divider">
-				<li>CoderDojo 10: <a target="_blank" class="uk-link-muted" href="https://www.uberresearch.com/">&Uuml;berResearch</a></li>
-				<li>CoderDojo 9: <a target="_blank" class="uk-link-muted" href="http://www.hololux.de/">hololux</a></li>
-				<li>CoderDojo 8: <a target="_blank" class="uk-link-muted" href="https://www.saarcamp.de">SaarCamp</a></li>
-				<li>CoderDojo 7: <a target="_blank" class="uk-link-muted" href="https://www.internet-marketing-agentur.com/">IMA</a></li>
-				<li>CoderDojo 6: <a target="_blank" class="uk-link-muted" href="https://www.eurodata.de">eurodata</a></li>
+				<li>CoderDojo 11:
+					<a target="_blank" class="uk-link-muted" href="https://www.eurodata.de">eurodata</a>
+				</li>
+				<li>CoderDojo 10:
+					<a target="_blank" class="uk-link-muted" href="https://www.uberresearch.com/">&Uuml;berResearch</a>
+				</li>
+				<li>CoderDojo 9:
+					<a target="_blank" class="uk-link-muted" href="http://www.hololux.de/">hololux</a>
+				</li>
+				<li>CoderDojo 8:
+					<a target="_blank" class="uk-link-muted" href="https://www.saarcamp.de">SaarCamp</a>
+				</li>
+				<li>CoderDojo 7:
+					<a target="_blank" class="uk-link-muted" href="https://www.internet-marketing-agentur.com/">IMA</a>
+				</li>
+				<li>CoderDojo 6:
+					<a target="_blank" class="uk-link-muted" href="https://www.eurodata.de">eurodata</a>
+				</li>
 				<li>CoderDojo 5: - </li>
-				<li>CoderDojo 4: <a target="_blank" class="uk-link-muted" href="http://www.iku-systems.de/">IKU Systems</a></li>
-				<li>CoderDojo 3: <a target="_blank" class="uk-link-muted" href="https://www.resolution.de/">Resolution</a></li>
-				<li>CoderDojo 2: <a target="_blank" class="uk-link-muted" href="https://www.squild.de/">SQUILD</a></li>
-				<li>CoderDojo 1: <a target="_blank" class="uk-link-muted" href="https://www.uberresearch.com/">UberResearch</a></li>
+				<li>CoderDojo 4:
+					<a target="_blank" class="uk-link-muted" href="http://www.iku-systems.de/">IKU Systems</a>
+				</li>
+				<li>CoderDojo 3:
+					<a target="_blank" class="uk-link-muted" href="https://www.resolution.de/">Resolution</a>
+				</li>
+				<li>CoderDojo 2:
+					<a target="_blank" class="uk-link-muted" href="https://www.squild.de/">SQUILD</a>
+				</li>
+				<li>CoderDojo 1:
+					<a target="_blank" class="uk-link-muted" href="https://www.uberresearch.com/">UberResearch</a>
+				</li>
 			</ul>
 			<br/>
 			<a href="" uk-totop uk-scroll></a>
