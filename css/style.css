@@ -148,3 +148,7 @@ h1 {
   transform: rotateY(-180deg);
   background-color: green;
 }
+
+.xmas-calendar iframe {
+  width: 100%;
+}
