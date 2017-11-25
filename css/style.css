@@ -39,6 +39,7 @@ h1 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style: none;
+  padding-left: 0;
 }
 
 .xmas-card {
@@ -129,6 +130,8 @@ h1 {
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
   background-color: #d02421;
+  font-size: 45px;
+  color: white;
 }
 
 .back {
