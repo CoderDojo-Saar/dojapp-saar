@@ -124,6 +124,7 @@ h1 {
   position: absolute;
   margin: 0;
   padding: 0;
+  background-size: contain;
 }
 
 .front {
