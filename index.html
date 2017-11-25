@@ -2,94 +2,98 @@
 <html>
 
 <head>
-	<title>CoderDojo - Start</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="uikit/css/uikit.min.css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/style.css">
+    <title>CoderDojo - Start</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="uikit/css/uikit.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
 
-	<script src="jquery/jquery-3.2.1.min.js"></script>
-	<script src="uikit/js/uikit.min.js"></script>
-	<script src="uikit/js/uikit-icons.min.js"></script>
-	<script src="./js/begruessung.js" defer></script>
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+    <script src="uikit/js/uikit.min.js"></script>
+    <script src="uikit/js/uikit-icons.min.js"></script>
+    <script src="./js/begruessung.js" defer></script>
 
-	<script src="js/sidemenu.js"></script>
+    <script src="js/sidemenu.js"></script>
 
-	<script>
-		var activeMenuId = 'start';
-	</script>
+    <script>
+        var activeMenuId = 'start';
+    </script>
 
-	<script src="js/page.js"></script>
+    <script src="js/page.js"></script>
 
-	<script>
-		$(document).ready(function () {
-			var timeToDojo = 1511614800000 - Date.now();
-			if (timeToDojo > 0 && timeToDojo <= 172800) {
-				UIkit.notification("<span uk-icon='icon: check'></span> Bald nächstes CoderDojo!");
-			}
+    <script>
+        $(document).ready(function () {
+            var timeToDojo = 1511614800000 - Date.now();
+            if (timeToDojo > 0 && timeToDojo <= 172800) {
+                UIkit.notification("<span uk-icon='icon: check'></span> Bald nächstes CoderDojo!");
+            }
 
-		})
-	</script>
+        })
+    </script>
 </head>
 
 <body>
-	<div class="uk-offcanvas-content">
+<div class="uk-offcanvas-content">
 
-		<!-- Sidemenu -->
-		<nav style="border-bottom: 1px solid #dddddd;background-color:white" class="uk-navbar uk-navbar-container uk-margin" uk-sticky>
-			<div class="uk-navbar-left">
-				<a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle href="#sidemenu"></a>
-			</div>
+    <!-- Sidemenu -->
+    <nav style="border-bottom: 1px solid #dddddd;background-color:white" class="uk-navbar uk-navbar-container uk-margin"
+         uk-sticky>
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle href="#sidemenu"></a>
+        </div>
 
-			<div class="uk-navbar-center">
-				<img src="img/logoonlytext-transparent.png" style="height: 50px;margin-top: 12px; " />
-			</div>
+        <div class="uk-navbar-center">
+            <img src="img/logoonlytext-transparent.png" style="height: 50px;margin-top: 12px; "/>
+        </div>
 
-			<div class="uk-navbar-right">
-				<img src="img/logowithouttext-transparent.png" style="height: 50px;margin-right: 10px;" />
-			</div>
-		</nav>
+        <div class="uk-navbar-right">
+            <img src="img/logowithouttext-transparent.png" style="height: 50px;margin-right: 10px;"/>
+        </div>
+    </nav>
 
-		<div id="sidemenu" uk-offcanvas>
-			<div class="uk-offcanvas-bar">
-				<div id="sidemenu_logo">
-					<img src="img/logoonlytext-transparent.png" style="height: 50px; " />
-				</div>
-				<button class="uk-offcanvas-close" type="button" uk-close></button>
-				<div style="padding-left: 20px;padding-top: 10px">
-					<ul id="sidemenu_menuitems" class="uk-nav uk-nav-default"></ul>
-				</div>
-			</div>
-		</div>
+    <div id="sidemenu" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+            <div id="sidemenu_logo">
+                <img src="img/logoonlytext-transparent.png" style="height: 50px; "/>
+            </div>
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <div style="padding-left: 20px;padding-top: 10px">
+                <ul id="sidemenu_menuitems" class="uk-nav uk-nav-default"></ul>
+            </div>
+        </div>
+    </div>
 
-		<!-- Page content -->
-		<div class="uk-container">
-			<h3 id="first-element">Herzlich Willkommen</h3>
-			in der App des CoderDojo Saars. Hier findest du viele Dinge von und f&uuml;r das CoderDojo.
-			<br/> Das n&auml;chste Dojo findet am 25.11.2017 in dem Ligatura Coworking Space (<a class="uk-link-muted" href="geonavigation.html">Anfahrt hier!</a>) statt. Bis dahin sind es noch:
-			<div id="dojo-countdown" uk-countdown="date: 2017-11-25T14:00:00+00:00">
-				<span class="uk-countdown-number uk-countdown-days"></span>
-				<span class="uk-countdown-separator">:</span>
-				<span class="uk-countdown-number uk-countdown-hours"></span>
-				<span class="uk-countdown-separator">:</span>
-				<span class="uk-countdown-number uk-countdown-minutes"></span>
-				<span class="uk-countdown-separator">:</span>
-				<span class="uk-countdown-number uk-countdown-seconds"></span>
-			</div>
-		</div>
-		<section class="uk-section uk-muted">
-			<div class="uk-container">
-				<h3>Kommende Veranstaltungen</h3>
-				<p>
-					Hier findet ihr kommende Veranstaltungen aus der Online-
-					und Kreativszene im Saarland.
-				</p>
-				<div class="media-container">
-					<iframe class="media" src="https://www.google.com/calendar/embed?src=333dnsdjttm38oci9mju3o159g%40group.calendar.google.com&ctz=Europe/Berlin&mode=AGENDA"></iframe>
-				</div>
-			</div>
-		</section>
-	</div>
+    <!-- Page content -->
+    <div class="uk-container">
+        <h3 id="first-element">Herzlich Willkommen</h3>
+        in der App des CoderDojo Saars. Hier findest du viele Dinge von und f&uuml;r das CoderDojo.
+        <br/> Das n&auml;chste Dojo findet am 25.11.2017 in dem Ligatura Coworking Space (<a class="uk-link-muted"
+                                                                                             href="geonavigation.html">Anfahrt
+        hier!</a>) statt. Bis dahin sind es noch:
+        <div id="dojo-countdown" uk-countdown="date: 2017-11-25T14:00:00+00:00">
+            <span class="uk-countdown-number uk-countdown-days"></span>
+            <span class="uk-countdown-separator">:</span>
+            <span class="uk-countdown-number uk-countdown-hours"></span>
+            <span class="uk-countdown-separator">:</span>
+            <span class="uk-countdown-number uk-countdown-minutes"></span>
+            <span class="uk-countdown-separator">:</span>
+            <span class="uk-countdown-number uk-countdown-seconds"></span>
+        </div>
+    </div>
+    <section class="uk-section uk-muted">
+        <div class="uk-container">
+            <h3>Kommende Veranstaltungen</h3>
+            <p>
+                Hier findet ihr kommende Veranstaltungen aus der Online-
+                und Kreativszene im Saarland.
+            </p>
+            <div class="media-container">
+                <iframe class="media"
+                        src="https://www.google.com/calendar/embed?src=333dnsdjttm38oci9mju3o159g%40group.calendar.google.com&ctz=Europe/Berlin&mode=AGENDA"></iframe>
+            </div>
+        </div>
+    </section>
+</div>
 </body>
 
 </html>
