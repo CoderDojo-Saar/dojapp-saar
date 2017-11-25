@@ -132,7 +132,7 @@ h1 {
   transform: rotateY(0deg);
   background-color: #d02421;
   font-size: 180px;
-  font-family: 'Mountains of Christmas', bold;
+  font-family: 'Mountains of Christmas', bold, sans-serif;
   color: white;
 }
 
