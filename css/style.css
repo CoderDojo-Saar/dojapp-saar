@@ -130,6 +130,8 @@ h1 {
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
   background-color: #d02421;
+  font-size: 45px;
+  color: white;
 }
 
 .back {
