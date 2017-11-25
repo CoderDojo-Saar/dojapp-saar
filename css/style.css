@@ -130,8 +130,9 @@ h1 {
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
   background-color: #d02421;
-  font-size: 45px;
+  font-size: 180px;
   color: white;
+  font-family: 'Mountains of Christmas', bold;
 }
 
 .back {
