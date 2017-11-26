@@ -1,155 +1,185 @@
 body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
 }
 
 h1 {
-  font-family: Courier;
+    font-family: Courier;
 }
 
 .uk-offcanvas-bar {
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
 }
 
 #sidemenu_logo {
-  padding-left: 10px;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  background-color: white;
-  width: 100%;
-  height: 50px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: white;
+    width: 100%;
+    height: 50px;
 }
 
 #first-element {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 .uk-nav-default {
-  font-size: 1.25rem;
+    font-size: 1.25rem;
 }
 
 .xmas-calendar {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  list-style: none;
-  padding-left: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
 }
 
 .xmas-card {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .xmas-card img {
-  max-width: 50%;
-  height: auto;
+    max-width: 50%;
+    height: auto;
 }
 
 .xmas-card--behind {
-  position: absolute;
-  top: 0;
-  left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .flip-container {
-  -webkit-perspective: 2000px;
-  perspective: 2000px;
-  -webkit-perspective-origin: center right;
-  perspective-origin: center right;
-  height: 300px;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 300px;
-  -ms-flex: 1 1 300px;
-  flex: 1 1 300px;
-  margin: 1px;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    -webkit-perspective-origin: center right;
+    perspective-origin: center right;
+    height: 300px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 300px;
+    -ms-flex: 1 1 300px;
+    flex: 1 1 300px;
+    margin: 1px;
 }
 
 .flip-container.ready:hover .flipper,
 .flip-container.hover .flipper {
-  -webkit-transform: rotateY(-95deg);
-  transform: rotateY(-95deg);
+    -webkit-transform: rotateY(-95deg);
+    transform: rotateY(-95deg);
 }
 
 .flipper {
-  -webkit-transition: -webkit-transform 0.5s linear;
-  transition: -webkit-transform 0.5s linear;
-  -o-transition: transform 0.5s linear;
-  transition: transform 0.5s linear;
-  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
-  position: relative;
-  -webkit-transform-origin: top left;
-  -ms-transform-origin: top left;
-  transform-origin: top left;
-  -webkit-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  z-index: 2;
+    -webkit-transition: -webkit-transform 0.5s linear;
+    transition: -webkit-transform 0.5s linear;
+    -o-transition: transform 0.5s linear;
+    transition: transform 0.5s linear;
+    transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+    position: relative;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 2;
 }
 
 .front,
 .back {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
 }
 
 .front {
-  -webkit-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-  background-color: #d02421;
-  font-size: 180px;
-  font-family: 'Mountains of Christmas', bold, sans-serif;
-  color: white;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    background-color: #d02421;
+    font-size: 180px;
+    font-family: 'Mountains of Christmas', bold, sans-serif;
+    color: white;
 }
 
 .front.front-white {
-  color: white;
+    color: white;
 }
 
 .front.front-black {
-  color: black;
+    color: black;
 }
 
 .back {
-  -webkit-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-  background-color: green;
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    background-color: green;
 }
 
 .xmas-calendar iframe {
-  width: 100%;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.uk-nav-default {
+    font-size: 1.25rem;
+}
+
+.media-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.media-container .media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+}
+
+#dojo-countdown {
+    margin-top: 1%;
+> > > > > > > master
 }

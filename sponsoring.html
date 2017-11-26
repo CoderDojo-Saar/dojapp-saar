@@ -2,15 +2,15 @@
 <html>
 
 <head>
-	<title>CoderDojo - Start</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="uikit/css/uikit.min.css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/style.css">
+    <title>CoderDojo - Start</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="uikit/css/uikit.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
 
-	<script src="jquery/jquery-3.2.1.min.js"></script>
-	<script src="uikit/js/uikit.min.js"></script>
-	<script src="uikit/js/uikit-icons.min.js"></script>
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+    <script src="uikit/js/uikit.min.js"></script>
+    <script src="uikit/js/uikit-icons.min.js"></script>
 
 	<script src="js/sidemenu.js"></script>
 
@@ -22,77 +22,77 @@
 </head>
 
 <body>
-	<div class="uk-offcanvas-content">
+<div class="uk-offcanvas-content">
 
 
+    <!-- Sidemenu -->
+    <nav style="border-bottom: 1px solid #dddddd;background-color:white"
+         class="uk-navbar uk-navbar-transparent uk-navbar-container uk-margin"
+         uk-sticky>
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle href="#sidemenu"></a>
+        </div>
 
-		<!-- Sidemenu -->
-		<nav style="border-bottom: 1px solid #dddddd;background-color:white" class="uk-navbar uk-navbar-transparent uk-navbar-container uk-margin"
-		 uk-sticky>
-			<div class="uk-navbar-left">
-				<a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle href="#sidemenu"></a>
-			</div>
+        <div class="uk-navbar-center">
+            <img src="img/logoonlytext-transparent.png" style="height: 50px; "/>
+        </div>
 
-			<div class="uk-navbar-center">
-				<img src="img/logoonlytext-transparent.png" style="height: 50px; " />
-			</div>
+        <div class="uk-navbar-right">
+            <img src="img/logowithouttext-transparent.png" style="height: 50px;margin-right: 10px;"/>
+        </div>
+    </nav>
 
-			<div class="uk-navbar-right">
-				<img src="img/logowithouttext-transparent.png" style="height: 50px;margin-right: 10px;" />
-			</div>
-		</nav>
+    <div id="sidemenu" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+            <div id="sidemenu_logo">
+                <img src="img/logoonlytext-transparent.png" style="height: 50px; "/>
+            </div>
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <div style="padding-left: 20px;padding-top: 10px">
+                <ul id="sidemenu_menuitems" class="uk-nav uk-nav-default"></ul>
+            </div>
+        </div>
+    </div>
 
-		<div id="sidemenu" uk-offcanvas>
-			<div class="uk-offcanvas-bar">
-				<div id="sidemenu_logo">
-					<img src="img/logoonlytext-transparent.png" style="height: 50px; " />
-				</div>
-				<button class="uk-offcanvas-close" type="button" uk-close></button>
-				<div style="padding-left: 20px;padding-top: 10px">
-					<ul id="sidemenu_menuitems" class="uk-nav uk-nav-default"></ul>
-				</div>
-			</div>
-		</div>
-
-		<div id="top" class="uk-container">
-			<h2>Sponsoren</h2>
-			<ul class="uk-list uk-list-divider">
-				<li>CoderDojo 11:
-					<a target="_blank" class="uk-link-muted" href="https://www.eurodata.de">eurodata</a>
-				</li>
-				<li>CoderDojo 10:
-					<a target="_blank" class="uk-link-muted" href="https://www.uberresearch.com/">&Uuml;berResearch</a>
-				</li>
-				<li>CoderDojo 9:
-					<a target="_blank" class="uk-link-muted" href="http://www.hololux.de/">hololux</a>
-				</li>
-				<li>CoderDojo 8:
-					<a target="_blank" class="uk-link-muted" href="https://www.saarcamp.de">SaarCamp</a>
-				</li>
-				<li>CoderDojo 7:
-					<a target="_blank" class="uk-link-muted" href="https://www.internet-marketing-agentur.com/">IMA</a>
-				</li>
-				<li>CoderDojo 6:
-					<a target="_blank" class="uk-link-muted" href="https://www.eurodata.de">eurodata</a>
-				</li>
-				<li>CoderDojo 5: - </li>
-				<li>CoderDojo 4:
-					<a target="_blank" class="uk-link-muted" href="http://www.iku-systems.de/">IKU Systems</a>
-				</li>
-				<li>CoderDojo 3:
-					<a target="_blank" class="uk-link-muted" href="https://www.resolution.de/">Resolution</a>
-				</li>
-				<li>CoderDojo 2:
-					<a target="_blank" class="uk-link-muted" href="https://www.squild.de/">SQUILD</a>
-				</li>
-				<li>CoderDojo 1:
-					<a target="_blank" class="uk-link-muted" href="https://www.uberresearch.com/">UberResearch</a>
-				</li>
-			</ul>
-			<br/>
-			<a href="" uk-totop uk-scroll></a>
-		</div>
-	</div>
+    <div id="top" class="uk-container">
+        <h2>Sponsoren</h2>
+        <ul class="uk-list uk-list-divider">
+            <li>CoderDojo 11:
+                <a target="_blank" class="uk-link-muted" href="https://www.eurodata.de">eurodata</a>
+            </li>
+            <li>CoderDojo 10:
+                <a target="_blank" class="uk-link-muted" href="https://www.uberresearch.com/">&Uuml;berResearch</a>
+            </li>
+            <li>CoderDojo 9:
+                <a target="_blank" class="uk-link-muted" href="http://www.hololux.de/">hololux</a>
+            </li>
+            <li>CoderDojo 8:
+                <a target="_blank" class="uk-link-muted" href="https://www.saarcamp.de">SaarCamp</a>
+            </li>
+            <li>CoderDojo 7:
+                <a target="_blank" class="uk-link-muted" href="https://www.internet-marketing-agentur.com/">IMA</a>
+            </li>
+            <li>CoderDojo 6:
+                <a target="_blank" class="uk-link-muted" href="https://www.eurodata.de">eurodata</a>
+            </li>
+            <li>CoderDojo 5: -</li>
+            <li>CoderDojo 4:
+                <a target="_blank" class="uk-link-muted" href="http://www.iku-systems.de/">IKU Systems</a>
+            </li>
+            <li>CoderDojo 3:
+                <a target="_blank" class="uk-link-muted" href="https://www.resolution.de/">Resolution</a>
+            </li>
+            <li>CoderDojo 2:
+                <a target="_blank" class="uk-link-muted" href="https://www.squild.de/">SQUILD</a>
+            </li>
+            <li>CoderDojo 1:
+                <a target="_blank" class="uk-link-muted" href="https://www.uberresearch.com/">UberResearch</a>
+            </li>
+        </ul>
+        <br/>
+        <a href="" uk-totop uk-scroll></a>
+    </div>
+</div>
 </body>
 
 </html>
