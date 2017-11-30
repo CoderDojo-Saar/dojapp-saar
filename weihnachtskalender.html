@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CoderDojo - Weihnachtskalender</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet">
+    <link rel="stylesheet" href="uikit/css/uikit.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+    <script src="uikit/js/uikit.min.js"></script>
+    <script src="uikit/js/uikit-icons.min.js"></script>
+    <script src="./js/begruessung.js" defer></script>
+    <script src="./js/kalender.js" defer></script>
+    <script src="./js/sidemenu.js"></script>
+    <script>
+        var activeMenuId = 'weihnachtskalender';
+    </script>
+    <script src="js/page.js"></script>
+    <script>
+        $(document).ready(function () {
+            var date = new Date();
+            console.log(date.getTime() - 1508587200000);
+
+            if (date.getTime() - 1508587200000 <= 172800) {
+                UIkit.notification("<span uk-icon='icon: check'></span> Bald nächstes CoderDojo!");
+            }
+
+        })
+    </script>
+</head>
+
+<body>
+    <div class="uk-offcanvas-content">
+
+        <!-- Sidemenu -->
+        <nav style="border-bottom: 1px solid #dddddd;background-color:white" class="uk-navbar uk-navbar-container uk-margin" uk-sticky>
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle href="#sidemenu"></a>
+            </div>
+
+            <div class="uk-navbar-center">
+                <img src="img/logoonlytext-transparent.png" style="height: 50px;margin-top: 12px; " />
+            </div>
+
+            <div class="uk-navbar-right">
+                <img src="img/logowithouttext-transparent.png" style="height: 50px;margin-right: 10px;" />
+            </div>
+        </nav>
+
+        <div id="sidemenu" uk-offcanvas>
+            <div class="uk-offcanvas-bar">
+                <div id="sidemenu_logo">
+                    <img src="img/logoonlytext-transparent.png" style="height: 50px; " />
+                </div>
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <div style="padding-left: 20px;padding-top: 10px">
+                    <ul id="sidemenu_menuitems" class="uk-nav uk-nav-default"></ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Inhalt -->
+        <div class="uk-container">
+            <ol class="xmas-calendar">
+                <li data-date="2017-12-01" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front front-white" style="background-image:url('img/xmas-calendar/gif/1.gif')">1</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        <img src="https://pbs.twimg.com/profile_images/563440428603543553/k7iYudB2.png" alt="Jugend Hackt"/>
+                        <a href="https://jugendhackt.org">Jugend Hackt</a>
+                    </section>
+                </li>
+                <li data-date="2017-12-02" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front front-white" style="background-image: url('img/xmas-calendar/webp/2.webp')">2</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        <img src="http://p13.zdassets.com/hc/settings_assets/516754/200040513/rOKKHzmM02m662DGhRWgGw-code-logo-640x640.png" alt="Code.org"/>
+                        <a href="https://code.org">Code.org</a>
+                    </section>
+                </li>
+                <li data-date="2017-12-03" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front front-black" style="background-image: url('img/xmas-calendar/webp/3.webp')">3</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        <img src="https://calliope.cc/content/1-ueber-mini/mini_board.png" alt="Calliope Mini" />
+                        <a href="http://calliope-saarland.de">Calliope mini</a>
+                    </section>
+                </li>
+                <li data-date="2017-12-04" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front front-black" style="background-image: url('img/xmas-calendar/mp4/4.mp4')">4</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ybdoo4kz7tY" frameborder="0" allowfullscreen></iframe>
+                    </section>
+                </li>
+                <li data-date="2017-12-05" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front front-white" style="background-image: url('img/xmas-calendar/webp/5.webp')">5</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        5 Inhalt
+                    </section>
+                </li>
+                <li data-date="2017-12-06" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front front-black" style="background-image: url('img/xmas-calendar/gif/6.gif')">6</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        6 Inhalt
+                    </section>
+                </li>
+                <li data-date="2017-12-07" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front front-black" style="background-image: url('img/xmas-calendar/gif/7.gif')">7</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        7 Inhalt
+                    </section>
+                </li>
+                <li data-date="2017-12-08" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front front-black" style="background-image: url('img/xmas-calendar/webp/8.webp')">8</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        8 Inhalt
+                    </section>
+                </li>
+                <li data-date="2017-12-09" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front" style="background-image: url('img/xmas-calendar/webp/9.webp')">9</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        9 Inhalt
+                    </section>
+                </li>
+                <li data-date="2017-12-10" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front">10</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        10 Inhalt
+                    </section>
+                </li>
+                <li data-date="2017-12-11" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front">11</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        11 Inhalt
+                    </section>
+                </li>
+                <li data-date="2017-12-12" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front">12</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        12 Inhalt
+                    </section>
+                </li>
+                <li data-date="2017-12-13" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front">13</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        13 Inhalt
+                    </section>
+                </li>
+                <li data-date="2017-12-14" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front">14</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        14 Inhalt
+                    </section>
+                </li>
+                <li data-date="2017-12-15" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front">15</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        15 Inhalt
+                    </section>
+                </li>
+                <li data-date="2017-12-16" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front">16</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        16 Inhalt
+                    </section>
+                </li>
+                <li data-date="2017-12-17" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front">17</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        17 Inhalt
+                    </section>
+                </li>
+                <li data-date="2017-12-18" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front">18</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        18 Inhalt
+                    </section>
+                </li>
+                <li data-date="2017-12-19" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front">19</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        19 Inhalt
+                    </section>
+                </li>
+                <li data-date="2017-12-20" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front">20</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        20 Inhalt
+                    </section>
+                </li>
+                <li data-date="2017-12-21" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front">21</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        21 Inhalt
+                    </section>
+                </li>
+                <li data-date="2017-12-22" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front">22</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        22 Inhalt
+                    </section>
+                </li>
+                <li data-date="2017-12-23" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front">23</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        23 Inhalt
+                    </section>
+                </li>
+                <li data-date="2017-12-24" class="flip-container">
+                    <div class="flipper xmas-card">
+                        <h3 class="front">24</h3>
+                        <div class="back"></div>
+                    </div>
+                    <section class="xmas-card xmas-card--behind">
+                        24 Inhalt
+                    </section>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+</body>
+
+</html>
