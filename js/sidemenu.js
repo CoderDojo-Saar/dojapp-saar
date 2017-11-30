@@ -2,17 +2,17 @@
 
 function createSideMenu(activeMenuId) {
     var menu = [
-        {id: 'start', label: 'Start', link: 'index.html'},
-        {id: 'about', label: 'Über', link: 'about.html'},
-        {id: 'registration', label: 'Anmeldung', link: 'anmeldung.html'},
-        {id: 'geo', label: 'Anfahrt', link: 'geonavigation.html'},
-        {id: 'xmascalendar', label: 'Adventskalender', link: 'weihnachtskalender.html'},
+        {id: 'start', label: 'Start', link: 'index.html', icon: 'home'},
+        {id: 'about', label: 'Über', link: 'about.html', icon: 'info'},
+        {id: 'registration', label: 'Anmeldung', link: 'anmeldung.html', icon: 'mail'},
+        {id: 'geo', label: 'Anfahrt', link: 'geonavigation.html', icon: 'location'},
+        {id: 'xmascalendar', label: 'Adventskalender', link: 'weihnachtskalender.html', icon: 'star'},
         {},
-        {id: 'contact', label: 'Kontaktm&ouml;glichkeiten', link: 'kontaktmöglichkeiten.html'},
-        {id: 'gallery', label: 'Bildergalerie', link: 'bildergalerie.html'},
+        {id: 'contact', label: 'Kontaktm&ouml;glichkeiten', link: 'kontaktmöglichkeiten.html', icon: 'reply'},
+        {id: 'gallery', label: 'Bildergalerie', link: 'bildergalerie.html', icon: 'image'},
         {},
-        {id: 'sponsors', label: 'Sponsoren', link: 'sponsoring.html'},
-        {id: 'legal', label: 'Impressum', link: 'impressum.html'},
+        {id: 'sponsors', label: 'Sponsoren', link: 'sponsoring.html', icon: 'bolt'},
+        {id: 'legal', label: 'Impressum', link: 'impressum.html', icon: 'world'},
     ];
 
     // @ts-ignore
@@ -48,17 +48,21 @@ function createSeparator() {
 }
 
 function createMenuItem(menuItem, activeMenuId) {
+    var iconName = (typeof menuItem.icon === 'undefined') ? 'link' : menuItem.icon;
+
     var className = getMenuItemClass(menuItem, activeMenuId);
-    var htmlCode = '<li ' + className + '><a href="' + menuItem.link + '">' + menuItem.label + '</a></li>';
+    var htmlCode = '<li class="' + className + 'uk-icon-link"><a href="' + menuItem.link + '" class="uk-icon-link" uk-icon="icon: ' + iconName + '">' + menuItem.label + ' </a></li>';
 
     return htmlCode;
 }
 
 function getMenuItemClass(menuItem, activeMenuId) {
-    var className = '';
+    var className = ' ';
     if (menuItem.id === activeMenuId) {
-        className = 'class="uk-active"';
+        className = 'uk-active';
     }
+
+    className += ' ';
 
     return className;
 }
