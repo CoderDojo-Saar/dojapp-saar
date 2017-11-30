@@ -6,6 +6,8 @@ function createSideMenu(activeMenuId) {
         {id: 'about', label: 'Über', link: 'about.html'},
         {id: 'registration', label: 'Anmeldung', link: 'anmeldung.html'},
         {id: 'geo', label: 'Anfahrt', link: 'geonavigation.html'},
+        {id: 'xmascalendar', label: 'Adventskalender', link: 'weihnachtskalender.html'},
+        {},
         {id: 'contact', label: 'Kontaktm&ouml;glichkeiten', link: 'kontaktmöglichkeiten.html'},
         {id: 'gallery', label: 'Bildergalerie', link: 'bildergalerie.html'},
         {},
