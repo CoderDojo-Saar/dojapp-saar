@@ -2,22 +2,24 @@
 <html>
 
 <head>
-    <title>CoderDojo - Kontakt</title>
+    <title>CoderDojo - Kontaktmöglichkeiten</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="uikit/css/uikit.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="uikit/css/uikit.min.css">
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+    <script src="uikit/js/uikit.min.js"></script>
+    <script src="uikit/js/uikit-icons.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
 
-	<script src="jquery/jquery-3.2.1.min.js"></script>
-	<script src="uikit/js/uikit.min.js"></script>
-	<script src="uikit/js/uikit-icons.min.js"></script>
-	<script src="js/sidemenu.js"></script>
+    <script>
+        var activeMenuId = 'contact';
+    </script>
 
-	<script>
-		var activeMenuId = 'contact';
-	</script>
-
-	<script src="js/page.js"></script>
+    <script src="js/begruessung.js" defer></script>
+    <script src="js/sidemenu.js"></script>
+    <script src="js/page.js"></script>
 </head>
 
 <body>
@@ -53,7 +55,7 @@
 
     <!-- Page Content -->
     <div class="uk-container">
-        <h3 id="first-element">Kontaktm&ouml;glichkeiten</h3>
+        <h1 id="first-element">Kontaktm&ouml;glichkeiten</h1>
 
         Du kannst uns über diese Optionen erreichen:
         <ul class="uk-list uk-list-bullet">
@@ -74,5 +76,4 @@
     </div>
 </div>
 </body>
-
 </html>

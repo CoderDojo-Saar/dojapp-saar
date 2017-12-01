@@ -4,22 +4,21 @@
 <head>
     <title>CoderDojo - Start</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="uikit/css/uikit.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
 
-
+    <link rel="stylesheet" href="uikit/css/uikit.min.css">
     <script src="jquery/jquery-3.2.1.min.js"></script>
     <script src="uikit/js/uikit.min.js"></script>
     <script src="uikit/js/uikit-icons.min.js"></script>
-    <script src="./js/begruessung.js" defer></script>
 
-    <script src="js/sidemenu.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 
-    <script>
+    <script type="text/javascript">
         var activeMenuId = 'start';
     </script>
 
+    <script src="js/begruessung.js" defer></script>
+    <script src="js/sidemenu.js"></script>
     <script src="js/page.js"></script>
 
     <script>
@@ -29,7 +28,7 @@
                 UIkit.notification("<span uk-icon='icon: check'></span> Bald nächstes CoderDojo!");
             }
 
-        })
+        });
     </script>
 </head>
 
@@ -66,11 +65,12 @@
 
     <!-- Page content -->
     <div class="uk-container">
-        <h3 id="first-element">Herzlich Willkommen</h3>
+        <h1 id="first-element">Herzlich Willkommen</h1>
         in der App des CoderDojo Saars. Hier findest du viele Dinge von und f&uuml;r das CoderDojo.
-        <br/> Das n&auml;chste Dojo findet am 25.11.2017 in dem Ligatura Coworking Space (<a class="uk-link-muted"
+        <br> Das n&auml;chste Dojo findet am 25.11.2017 in dem Ligatura Coworking Space (<a class="uk-link-muted"
                                                                                              href="geonavigation.html">Anfahrt
         hier!</a>) statt. Bis dahin sind es noch:
+
         <div id="dojo-countdown" uk-countdown="date: 2017-11-25T14:00:00+00:00">
             <span class="uk-countdown-number uk-countdown-days"></span>
             <span class="uk-countdown-separator">:</span>
@@ -81,6 +81,7 @@
             <span class="uk-countdown-number uk-countdown-seconds"></span>
         </div>
     </div>
+
     <section class="uk-section uk-muted">
         <div class="uk-container">
             <h3>Kommende Veranstaltungen</h3>
@@ -96,5 +97,4 @@
     </section>
 </div>
 </body>
-
 </html>

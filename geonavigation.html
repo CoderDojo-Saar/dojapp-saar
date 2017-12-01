@@ -2,22 +2,24 @@
 <html>
 
 <head>
-    <title>CoderDojo - Anfahrt</title>
+    <title>CoderDojo - Anfahrtg</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="uikit/css/uikit.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="uikit/css/uikit.min.css">
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+    <script src="uikit/js/uikit.min.js"></script>
+    <script src="uikit/js/uikit-icons.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
 
-	<script src="jquery/jquery-3.2.1.min.js"></script>
-	<script src="uikit/js/uikit.min.js"></script>
-	<script src="uikit/js/uikit-icons.min.js"></script>
-	<script src="js/sidemenu.js"></script>
+    <script>
+        var activeMenuId = 'geo';
+    </script>
 
-	<script>
-		var activeMenuId = 'geo';
-	</script>
-
-	<script src="js/page.js"></script>
+    <script src="js/begruessung.js" defer></script>
+    <script src="js/sidemenu.js"></script>
+    <script src="js/page.js"></script>
 
 </head>
 
@@ -53,14 +55,15 @@
         </div>
     </div>
 
-    <div id="top" class="uk-container">
-        <h2>Anfahrt</h2>
+    <div class="uk-container">
+        <h1 id="first-element">Anfahrt</h1>
         Das CoderDojo Saar findet normalerweise immer in dem Ligatura Coworking Space in Saarbr&uuml;cken im Quartier
         Eurobahnhof
         statt. Falls das n&auml;chste Treffen an einem anderen Ort stattfinden sollte, w&uuml;rde dies hier stehen :)
-        <br/>
+
+        <br>
         <a class="uk-button uk-button-default" href="geo:49.2430028,6.9897871">Auf Karte anzeigen</a>
-        <br/>
+        <br>
         <a href="" uk-totop uk-scroll></a>
     </div>
 </div>

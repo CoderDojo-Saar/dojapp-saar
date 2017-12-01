@@ -4,20 +4,21 @@
 <head>
     <title>CoderDojo - Anmeldung</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="uikit/css/uikit.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="uikit/css/uikit.min.css">
     <script src="jquery/jquery-3.2.1.min.js"></script>
     <script src="uikit/js/uikit.min.js"></script>
     <script src="uikit/js/uikit-icons.min.js"></script>
 
-	<script src="js/sidemenu.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 
 	<script>
 		var activeMenuId = 'registration';
 	</script>
 
+    <script src="js/begruessung.js" defer></script>
+    <script src="js/sidemenu.js"></script>
 	<script src="js/page.js"></script>
 
 </head>
@@ -55,14 +56,13 @@
 
     <!-- Page Content -->
     <div class="uk-container">
-        <h3 id="first-element">Anmeldung</h3>
+        <h1 id="first-element">Anmeldung</h1>
         <p>Melde dich hier an, indem du eine E-Mail mit deinem Namen an hello@coderdojo-saar.de schickst.</p>
         <div style="margin: auto; width: 50%">
             <a class="uk-button uk-button-default"
                href="mailto:hello@coderdojo-saar?subject=Anmeldung%20zum%20CoderDojo&amp;body=Hallo,%20hiermit%20moechte%20ich%20mich%20zum%20CoderDojo%20anmelden.%20Mein%20Name%20lautet%20[NAME%20HIER%20EINSETZEN]">Anmelden</a>
         </div>
     </div>
-
+</div>
 </body>
-
 </html>
