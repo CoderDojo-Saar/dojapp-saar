@@ -6,6 +6,7 @@ body {
 h1,h2,h3 {
     font-weight: 600;
     font-size: 2.4rem;
+    margin-top: 0;
 }
 
 .uk-offcanvas-bar {
@@ -181,4 +182,8 @@ h1,h2,h3 {
 
 #dojo-countdown {
     margin-top: 1%;
+}
+
+.uk-section {
+    padding-top: 0;
 }
