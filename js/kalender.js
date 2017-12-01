@@ -5,7 +5,7 @@ document.querySelectorAll("[data-date]").forEach(
     var YDate = new Date().getFullYear()
 
     var tuer = tuerchen.split("-");
-    if(NDate>=tuer[2] || tuer[0]<=YDate){
+    if(NDate>=tuer[2] || tuer[0]<YDate){
       el.classList.add("ready");
     }
   }
