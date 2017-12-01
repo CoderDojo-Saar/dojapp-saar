@@ -1,9 +1,11 @@
 body {
     font-family: "Open Sans", sans-serif;
+    /* Gute Schriftgröße auf Mobilgeräten */
     font-size: 17px;
 }
 
 h1,h2,h3 {
+    /* Macht Überschriften besser erkennbar */
     font-weight: 600;
     margin-top: 0;
 }
@@ -21,6 +23,7 @@ h3 {
 }
 
 .uk-offcanvas-bar {
+    /* Entfernt Abstände */
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
@@ -36,6 +39,9 @@ h3 {
 }
 
 #first-element {
+    /* Fügt einen kleinen Abstand unter der Menüleiste ein.
+     * TODO: Durch Margin-Bottom für uk-navbar ersetzen.
+     */
     margin-top: 10px;
 }
 
@@ -149,10 +155,12 @@ h3 {
 }
 
 .front.font-white {
+    /* Setzt die Farbe der Nummer auf Weiß */
     color: white;
 }
 
 .front.font-black {
+    /* Setzt die Farbe der Nummer auf Schwarz */
     color: black;
 }
 
@@ -196,5 +204,6 @@ h3 {
 }
 
 .uk-section {
+    /* Abstand überhalb einer section entfernt */
     padding-top: 0;
 }
