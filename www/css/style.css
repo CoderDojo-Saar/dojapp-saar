@@ -1,20 +1,205 @@
 body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    /* Gute Schriftgröße auf Mobilgeräten */
+    font-size: 17px;
+}
+
+h1,h2,h3 {
+    /* Macht Überschriften besser erkennbar */
+    font-weight: 600;
+    margin-top: 0;
 }
 
 h1 {
-  font-family: Courier;
+    font-size: 2.4rem;
 }
 
-a {
-  color: black;
-  text-decoration: none;
-  width: auto;
-  font-size: 22px;
+h2 {
+    font-size: 1.9rem;
 }
 
-#Menue {
-	background-color: #87CEFA;
-	height: 50px;
+h3 {
+    font-size: 1.4rem;
+}
+
+.uk-offcanvas-bar {
+    /* Entfernt Abstände */
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+#sidemenu_logo {
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+}
+
+#first-element {
+    /* Fügt einen kleinen Abstand unter der Menüleiste ein.
+     * TODO: Durch Margin-Bottom für uk-navbar ersetzen.
+     */
+    margin-top: 10px;
+}
+
+.uk-nav-default {
+    font-size: 1.25rem;
+}
+
+.xmas-calendar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+}
+
+.xmas-card {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.xmas-card img {
+    max-width: 50%;
+    height: auto;
+}
+
+.xmas-card--behind {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.flip-container {
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    -webkit-perspective-origin: center right;
+    perspective-origin: center right;
+    height: 300px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 300px;
+    -ms-flex: 1 1 300px;
+    flex: 1 1 300px;
+    margin: 1px;
+}
+
+.flip-container.ready:hover .flipper,
+.flip-container.hover .flipper {
+    -webkit-transform: rotateY(-95deg);
+    transform: rotateY(-95deg);
+}
+
+.flipper {
+    -webkit-transition: -webkit-transform 0.5s linear;
+    transition: -webkit-transform 0.5s linear;
+    -o-transition: transform 0.5s linear;
+    transition: transform 0.5s linear;
+    transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+    position: relative;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 2;
+}
+
+.front,
+.back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+.front {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    background-color: #d02421;
+    font-size: 180px;
+    color: white;
+}
+
+.front.font-white {
+    /* Setzt die Farbe der Nummer auf Weiß */
+    color: white;
+}
+
+.front.font-black {
+    /* Setzt die Farbe der Nummer auf Schwarz */
+    color: black;
+}
+
+.back {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    background-color: lightgray;
+}
+
+.xmas-calendar iframe {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.xmas-card-desc {
+    text-align: center;
+}
+
+.uk-nav-default {
+    font-size: 1.25rem;
+}
+
+.media-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.media-container .media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.uk-section {
+    /* Abstand überhalb einer section entfernt */
+    padding-top: 0;
 }
