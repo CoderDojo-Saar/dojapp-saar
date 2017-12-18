@@ -1,0 +1,28 @@
+{
+  "name": "dojapp-saar",
+  "version": "1.0.0",
+  "description": "Unsere eigene App.",
+  "main": "js/page.js",
+  "dependencies": {
+    "nativescript": "^2.5.4",
+    "tns-android": "^2.5.0",
+    "tns-core-modules": "^2.5.2",
+    "tns-ios": "^2.5.0"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoderDojo-Saar/dojapp-saar.git"
+  },
+  "author": "CoderDojo Saar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoderDojo-Saar/dojapp-saar/issues"
+  },
+  "homepage": "https://github.com/CoderDojo-Saar/dojapp-saar#readme",
+  "devDependencies": {
+    "ava": "^0.24.0"
+  }
+}

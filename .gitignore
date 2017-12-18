@@ -1,1 +1,7 @@
 .idea
+mkmf.log
+.vscode
+node_modules/
+platforms/
+tnsapp/
+typings/
