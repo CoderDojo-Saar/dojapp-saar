@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CoderDojo - Adventskalender</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../js/uikit/css/uikit.min.css">
+    <script src="../js/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../js/uikit/js/uikit.min.js"></script>
+    <script src="../js/uikit/js/uikit-icons.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style type="text/css">
+        .front {
+            font-family: 'Mountains of Christmas', bold, sans-serif;
+        }
+    </style>
+    <script>
+        var activeMenuId = 'xmascalendar';
+    </script>
+
+    <script src="../js/begruessung.js" defer></script>
+    <script src="../js/sidemenu.js"></script>
+    <script src="../js/kalender.js" defer></script>
+    <script src="../js/page.js"></script>
+</head>
+
+<body>
+<div class="uk-offcanvas-content">
+
+    <!-- Sidemenu -->
+    <nav style="border-bottom: 1px solid #dddddd;background-color:white" class="uk-navbar uk-navbar-container uk-margin" uk-sticky>
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle href="#sidemenu"></a>
+        </div>
+
+        <div class="uk-navbar-center">
+            <img src="img/logoonlytext-transparent.png" style="height: 50px;margin-top: 12px; " />
+        </div>
+
+        <div class="uk-navbar-right">
+            <img src="img/logowithouttext-transparent.png" style="height: 50px;margin-right: 10px;" />
+        </div>
+    </nav>
+
+    <div id="sidemenu" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+            <div id="sidemenu_logo">
+                <img src="img/logoonlytext-transparent.png" style="height: 50px; " />
+            </div>
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <div style="padding-left: 20px;padding-top: 10px">
+                <ul id="sidemenu_menuitems" class="uk-nav uk-nav-default"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page content -->
+    <div class="uk-container">
+        <h1 id="first-element">Adventskalender</h1>
+
+        <ol class="xmas-calendar">
+            <li data-date="2017-12-01" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front font-white" style="background-image:url('../img/xmas-calendar/gif/1.gif')">1</h3>
+                    <div class="back"></div>
+                </div>
+                <section class="xmas-card xmas-card--behind">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pWIcsWLtVLg" frameborder="0" allowfullscreen></iframe>
+                    <span class="xmas-card-desc">Im CoderDojo Saar haben wir 2 Roboter. <br>
+						<a href="http://coderdojo-saar.de/lego-mindstorms/" target="_new">Mehr zu Mindstorms ...</a>
+					</span>
+				</section>
+            </li>
+            <li data-date="2017-12-02" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front font-white" style="background-image: url('../img/xmas-calendar/webp/2.webp')">2</h3>
+                    <div class="back"></div>
+                </div>
+                <section class="xmas-card xmas-card--behind">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ybdoo4kz7tY" frameborder="0" allowfullscreen></iframe>
+                     <span class="xmas-card-desc">Im CoderDojo Saar gibt es 2 MakeyMakey. <br>
+						 <a href="http://coderdojo-saar.de/makeymakey/" target="_new">Mehr zu MakeyMakey ...</a> 
+					 </span>
+				</section>
+            </li>
+            <li data-date="2017-12-03" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front font-black" style="background-image: url('../img/xmas-calendar/webp/3.webp')">3</h3>
+                    <div class="back"></div>
+                </div>
+                <section class="xmas-card xmas-card--behind">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tZJ0zfZgpWo" frameborder="0" allowfullscreen></iframe>
+                     <span class="xmas-card-desc">Arduinos sind programmierbare Mikrocontroller. <br>
+						 <a href="http://coderdojo-saar.de/arduino/" target="_new">Mehr zu Arduino ...</a> 
+					 </span>
+				</section>
+            </li>
+            <li data-date="2017-12-04" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front font-black" style="background-image: url('../img/xmas-calendar/gif/4.gif')">4</h3>
+                    <div class="back"></div>
+				</div>	
+                <section class="xmas-card xmas-card--behind">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/0K2hxBrvuIM" frameborder="0" allowfullscreen></iframe>
+                    <span class="xmas-card-desc">Am 4.12.2017 startet die "Hour of Code"-Woche.<br>
+						 <a href="http://coderdojo-saar.de/hour-of-code/" target="_new">Mehr zur "Hour of Code" ...</a> 
+					</span>
+				</section>
+            </li>
+            <li data-date="2017-12-05" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front font-white" style="background-image: url('../img/xmas-calendar/webp/5.webp')">5</h3>
+                    <div class="back"></div>
+                </div>
+                <section class="xmas-card xmas-card--behind">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/SG5e5KElTDc" frameborder="0" allowfullscreen></iframe>
+					<span class="xmas-card-desc">Animierte Weihnachtskarte mit Scratch<br>
+						 <a href="http://coderdojo-saar.de/scratch-info/" target="_new">Mehr zu Scratch ...</a> 
+					</span>
+				</section>
+            </li>
+            <li data-date="2017-12-06" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front font-black" style="background-image: url('../img/xmas-calendar/gif/6.gif')">6</h3>
+                    <div class="back"></div>
+                </div>
+                <section class="xmas-card xmas-card--behind">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/SAet-s6qSso" frameborder="0" allowfullscreen></iframe>
+					<span class="xmas-card-desc">Unity-Spiel nach Tanks-Tutorial<br>
+						 <a href="http://coderdojo-saar.de/unity/" target="_new">Mehr zu Unity ...</a> 
+					</span>
+				</section>
+            </li>
+            <li data-date="2017-12-07" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front font-black" style="background-image: url('../img/xmas-calendar/gif/7.gif')">7</h3>
+                    <div class="back"></div>
+                </div>
+                <section class="xmas-card xmas-card--behind">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/a-BADQT8Ujw" frameborder="0" allowfullscreen></iframe>
+                    <span class="xmas-card-desc">App-Entwicklung mit AppInventor <br>
+						 <a href="http://coderdojo-saar.de/app-inventor/" target="_new">Mehr zu AppInventor ...</a> 
+					</span>
+				</section>
+            </li>
+            <li data-date="2017-12-08" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front font-black" style="background-image: url('../img/xmas-calendar/webp/8.webp')">8</h3>
+                    <div class="back"></div>
+                </div>
+                <section class="xmas-card xmas-card--behind">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/aD1C766C0fk" frameborder="0" allowfullscreen></iframe>
+					<span class="xmas-card-desc">Alarmanlage mit Cubelets <br>
+						 <a href="http://coderdojo-saar.de/cubelets/" target="_new">Mehr zu Cubelets ...</a> 
+					</span>
+				</section>
+            </li>
+            <li data-date="2017-12-09" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front" style="background-image: url('../img/xmas-calendar/webp/9.webp')">9</h3>
+                    <div class="back"></div>
+                </div>
+                <section class="xmas-card xmas-card--behind">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/dtXU9GMmCxI" frameborder="0" allowfullscreen></iframe>
+					<span class="xmas-card-desc">
+						 Im Juni hatte uns unser Sponsor <a href="http://www.hololux.de/" target="_new">Hololux</a><br> zu sich eingeladen. 
+					</span>
+				</section>
+            </li>
+            <li data-date="2017-12-10" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front" style="background-image: url('../img/xmas-calendar/gif/10.gif')">10</h3>
+                    <div class="back"></div>
+                </div>
+                <section class="xmas-card xmas-card--behind">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/0u8qC1tqbKY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+					<span class="xmas-card-desc">Unterwasserspiel mit Scratch<br>
+						 <a href="http://coderdojo-saar.de/scratch-info/" target="_new">Mehr zu Scratch ...</a> 
+					</span>
+				</section>
+			</li>	
+				
+            <li data-date="2017-12-11" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front"  style="background-image: url('../img/xmas-calendar/gif/11.gif')">11</h3>
+                    <div class="back"></div>
+                </div>
+                <section class="xmas-card xmas-card--behind">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/usMycp3lr1Y" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+					<span class="xmas-card-desc">Unity-Spiel nach "Space Invaders"-Tutorial<br>
+						 <a href="http://coderdojo-saar.de/unity/" target="_new">Mehr zu Unity ...</a> 
+					</span>
+				</section>
+            </li>
+            <li data-date="2017-12-12" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front" style="background-image: url('../img/xmas-calendar/gif/12.gif')">12</h3>
+                    <div class="back"></div>
+                </div>
+                <section class="xmas-card xmas-card--behind">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/EjUbkxEzGj0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+					<span class="xmas-card-desc">Code Master - Informatik ohne Strom<br>
+						 <a href="http://coderdojo-saar.de/code-master-informatik-ohne-strom/" target="_new">Mehr zu Informatik ohne Strom ...</a> 
+					</span>
+				</section>
+            </li>
+            <li data-date="2017-12-13" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front" style="background-image: url('../img/xmas-calendar/gif/13.gif')">13</h3>
+                    <div class="back"></div>
+                </div>
+                <section class="xmas-card xmas-card--behind">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/nZDCmDU8fvU" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+					<span class="xmas-card-desc">Swift Playgrounds<br>
+						 <a href="http://coderdojo-saar.de/swift-playgrounds/" target="_new">Mehr zu Swift Playgrounds ...</a> 
+					</span>
+				</section>
+            </li>
+            <li data-date="2017-12-14" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front" style="background-image: url('../img/xmas-calendar/gif/14.gif')">14</h3>
+                    <div class="back"></div>
+                </div>
+                <section class="xmas-card xmas-card--behind">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/T3CwRyXofes" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+					<span class="xmas-card-desc"><a href="https://scratch.mit.edu/projects/188367516/" target="_blank">Sterne fangen</a> mit Scratch<br>
+						 <a href="http://coderdojo-saar.de/scratch-info/" target="_new">Mehr zu Scratch ...</a> 
+					</span>
+				</section>
+            </li>
+            <li data-date="2017-12-15" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front" style="background-image: url('../img/xmas-calendar/gif/15.gif')">15</h3>
+                    <div class="back"></div>
+                </div>
+                <section class="xmas-card xmas-card--behind">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/dBdffwgJ_sA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+					<span class="xmas-card-desc"><a href="https://scratch.mit.edu/projects/152706165/" target="_blank">Pong-Spiel</a> mit Scratch<br>
+						 <a href="http://coderdojo-saar.de/scratch-info/" target="_new">Mehr zu Scratch ...</a> 
+					</span>
+				</section>
+            </li>
+            <li data-date="2017-12-16" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front" style="background-image: url('../img/xmas-calendar/gif/16.gif')">16</h3>
+                    <div class="back"></div>
+                </div>
+                <section class="xmas-card xmas-card--behind">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/OnqT6WUOz4g" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+					<span class="xmas-card-desc">Funk-Pong mit Calliope Mini<br>
+						 <a href="http://coderdojo-saar.de/calliope-mini/" target="_new">Mehr zu Calliope Mini ...</a> 
+					</span>
+				</section>
+            </li>
+            <li data-date="2017-12-17" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front" style="background-image: url('../img/xmas-calendar/gif/17.gif')">17</h3>
+                    <div class="back"></div>
+                </div>
+                <section class="xmas-card xmas-card--behind">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/qrmVt7bi1mQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+					<span class="xmas-card-desc">Programmierung des Adventskalenders<br>
+						 <a href="http://coderdojo-saar.de/html-css-und-javascript/" target="_new">Mehr zu HTML, CSS und Javascript ...</a> 
+					</span>
+				</section>
+            </li>
+            <li data-date="2017-12-18" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front" style="background-image: url('../img/xmas-calendar/gif/18.gif')">18</h3>
+                    <div class="back"></div>
+                </div>
+                <section class="xmas-card xmas-card--behind">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/pTmpn9ixySo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+					<span class="xmas-card-desc">Präsentation der CoderDojo Saar App<br>
+						 <a href="http://coderdojo-saar.de/html-css-und-javascript/" target="_new">Mehr zu HTML, CSS und Javascript ...</a> 
+					</span>
+				</section>
+            </li>
+            <li data-date="2017-12-19" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front" style="background-image: url('../img/xmas-calendar/gif/19.gif')">19</h3>
+                    <div class="back"></div>
+                </div>
+                <section class="xmas-card xmas-card--behind">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/OAXJDplWX_Q" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+						<span class="xmas-card-desc">Erstes Programmieren mit ScratchJr<br>
+						 <a href="http://coderdojo-saar.de/scratchjr/" target="_new">Mehr zu ScratchJr ...</a> 
+					</span>
+				</section>
+            </li>
+            <li data-date="2017-12-20" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front" style="background-image: url('../img/xmas-calendar/gif/20.gif')">20</h3>
+                    <div class="back"></div>
+                </div>
+                <section class="xmas-card xmas-card--behind">
+                    <img src="http://p13.zdassets.com/hc/settings_assets/516754/200040513/rOKKHzmM02m662DGhRWgGw-code-logo-640x640.png" alt="Code.org"/>
+                    <a href="https://code.org">Code.org</a>
+                </section>
+            </li>
+            <li data-date="2017-12-21" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front" style="background-image: url('../img/xmas-calendar/gif/21.gif')">21</h3>
+                    <div class="back"></div>
+                </div>
+ 			   <section class="xmas-card xmas-card--behind">
+     			  <iframe width="560" height="315" src="https://www.youtube.com/embed/Ybdoo4kz7tY" frameborder="0" allowfullscreen></iframe>
+			  </section>
+            </li>
+            <li data-date="2017-12-22" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front" style="background-image: url('../img/xmas-calendar/gif/22.gif')">22</h3>
+                    <div class="back"></div>
+                </div>
+                <section class="xmas-card xmas-card--behind">
+                    22 Inhalt
+                </section>
+            </li>
+            <li data-date="2017-12-23" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front" style="background-image: url('../img/xmas-calendar/gif/25.gif')">23</h3>
+                    <div class="back"></div>
+                </div>
+                <section class="xmas-card xmas-card--behind">
+                    23 Inhalt
+                </section>
+            </li>
+            <li data-date="2017-12-24" class="flip-container">
+                <div class="flipper xmas-card">
+                    <h3 class="front" style="background-image: url('../img/xmas-calendar/gif/24.gif')">24</h3>
+                    <div class="back"></div>
+                </div>
+                <section class="xmas-card xmas-card--behind">
+                    24 Inhalt
+                </section>
+            </li>
+        </ol>
+    </div>
+</div>
+</body>
+</html>

@@ -1,4 +1,3 @@
-
 # Created by https://www.gitignore.io/api/osx,
 
 ### OSX ###
@@ -139,3 +138,6 @@ Temporary Items
 !.vscode/extensions.json
 
 # End of https://www.gitignore.io/api/osx,apachecordova,node,visualstudiocode
+
+### IntelliJ ###
+.idea/*

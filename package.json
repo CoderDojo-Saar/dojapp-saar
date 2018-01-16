@@ -27,5 +27,17 @@
     "cordova": "^6.5.0",
     "cordova-android": "apache/cordova-android#master",
     "cordova-ios": "^4.3.1"
+  },
+  "dependencies": {
+    "cordova-android": "6.3.0-nightly.2017.4.23.e13e15d3",
+    "cordova-browser": "^5.0.1",
+    "cordova-ios": "4.1.1"
+  },
+  "cordova": {
+    "platforms": [
+      "ios",
+      "android",
+      "browser"
+    ]
   }
 }
