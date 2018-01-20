@@ -1,0 +1,43 @@
+{
+  "name": "dojapp-saar",
+  "version": "1.0.0",
+  "description": "Unsere eigene App.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "add-platforms": "cordova platform add ios && cordova platform add android",
+    "remove-platforms": "cordova platform remove ios && cordova platform remove android",
+    "update-platforms": "cordova platform update ios && cordova platform update android",
+    "ios-emulate": "cordova emulate ios --target=\"iPhone-6s, 9.2\"",
+    "android-emulate": "cordova emulate android",
+    "prepare": "cordova prepare"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoderDojo-Saar/dojapp-saar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoderDojo-Saar/dojapp-saar/issues"
+  },
+  "homepage": "https://github.com/CoderDojo-Saar/dojapp-saar#readme",
+  "devDependencies": {
+    "cordova": "^6.5.0",
+    "cordova-android": "apache/cordova-android#master",
+    "cordova-ios": "^4.3.1"
+  },
+  "dependencies": {
+    "cordova-android": "6.3.0-nightly.2017.4.23.e13e15d3",
+    "cordova-browser": "^5.0.1",
+    "cordova-ios": "4.1.1"
+  },
+  "cordova": {
+    "platforms": [
+      "ios",
+      "android",
+      "browser"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="de.coderdojo-saar.Dojapp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>CoderDojo-Saar</name>
+    <description>
+        Die App des Coder-Dojo Saar
+    </description>
+    <author email="hello@coderdojo-saar.de" href="http://coderdojo-saar.de">
+        Das Team der Dojapp
+    </author>
+    <content src="index.html" />
+    <access origin="https://www.google.com/*" />
+    <engine name="ios" spec="4.1.1" />
+    <engine name="android" spec="latest" />
+    <engine name="browser" spec="^5.0.1" />
+</widget>
