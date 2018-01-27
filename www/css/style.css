@@ -4,12 +4,6 @@ body {
     font-size: 17px;
 }
 
-h1,h2,h3 {
-    /* Macht Überschriften besser erkennbar */
-    font-weight: 600;
-    margin-top: 0;
-}
-
 h1 {
     font-size: 2.4rem;
 }
@@ -38,11 +32,11 @@ h3 {
     height: 50px;
 }
 
-.uk-navbar {
+#erstes-element {
     /* Fügt einen kleinen Abstand unter der Menüleiste ein.
+     * TODO: Eleganter lösen
      */
-
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .uk-nav-default {
