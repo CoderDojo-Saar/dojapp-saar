@@ -38,11 +38,11 @@ h3 {
     height: 50px;
 }
 
-#erstes-element {
+.uk-navbar {
     /* Fügt einen kleinen Abstand unter der Menüleiste ein.
-     * TODO: Durch Margin-Bottom für uk-navbar ersetzen.
      */
-    margin-top: 10px;
+
+    margin-bottom: 10px;
 }
 
 .uk-nav-default {
