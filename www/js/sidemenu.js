@@ -6,12 +6,10 @@ function createSideMenu(activeMenuId) {
 
     // Nur wenn das Menü existiert
     if (htmlSideMenu) {
-        var menu;
-
         // Wenn das Gerät mobil ist, dann ...
         if (isMobile()) {
             // ... definiere die Menü-Struktur, ansonsten ...
-            menu = [
+            var menu = [
                 {id: 'start', label: 'Start', link: 'index.html', icon: 'home'},
                 {id: 'about', label: 'Über', link: 'about.html', icon: 'info'},
                 {id: 'registration', label: 'Anmeldung', link: 'anmeldung.html', icon: 'mail'},
@@ -66,7 +64,8 @@ function createMenuItem(menuItem, activeMenuId) {
     var iconName = (typeof menuItem.icon === 'undefined') ? 'link' : menuItem.icon;
 
     var className = isActiveSite(menuItem, activeMenuId);
-    var htmlCode = '<li class="' + className + 'uk-icon-link"><a href="' + menuItem.link + '" class="uk-icon-link" uk-icon="icon: ' + iconName + '">' + menuItem.label + ' </a></li>';
+    var htmlCode = '<li class="' + className + 'uk-icon-link"><a href="' + menuItem.link + '" class="uk-icon-link"><span uk-icon="icon: '  + 
+    iconName + '"></span>&nbsp;' + menuItem.label + '</span></a></li>';
 
     return htmlCode;
 }
