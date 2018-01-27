@@ -29,7 +29,7 @@ h3 {
     padding-top: 0;
 }
 
-#sidemenu_logo {
+#menue-logo {
     padding-left: 10px;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -38,7 +38,7 @@ h3 {
     height: 50px;
 }
 
-#first-element {
+#erstes-element {
     /* Fügt einen kleinen Abstand unter der Menüleiste ein.
      * TODO: Durch Margin-Bottom für uk-navbar ersetzen.
      */
@@ -49,7 +49,7 @@ h3 {
     font-size: 1.25rem;
 }
 
-.xmas-calendar {
+.advents-kalender {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -61,7 +61,7 @@ h3 {
     padding-left: 0;
 }
 
-.xmas-card {
+.kalender-karte {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -83,18 +83,18 @@ h3 {
     height: 100%;
 }
 
-.xmas-card img {
+.kalender-karte img {
     max-width: 50%;
     height: auto;
 }
 
-.xmas-card--behind {
+.kalender-karte--behind {
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.flip-container {
+.dreh-container {
     -webkit-perspective: 2000px;
     perspective: 2000px;
     -webkit-perspective-origin: center right;
@@ -107,17 +107,16 @@ h3 {
     margin: 1px;
 }
 
-.flip-container.ready:hover .flipper,
-.flip-container.hover .flipper {
+.dreh-container.ready:hover .dreher,
+.dreh-container.hover .dreher {
     -webkit-transform: rotateY(-95deg);
     transform: rotateY(-95deg);
 }
 
-.flipper {
+.dreher {
     -webkit-transition: -webkit-transform 0.5s linear;
     transition: -webkit-transform 0.5s linear;
     -o-transition: transform 0.5s linear;
-    transition: transform 0.5s linear;
     transition: transform 0.5s linear, -webkit-transform 0.5s linear;
     position: relative;
     -webkit-transform-origin: top left;
@@ -130,8 +129,8 @@ h3 {
     z-index: 2;
 }
 
-.front,
-.back {
+.advents-kalender > .vorne,
+.advents-kalender > .hinten {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,7 +145,7 @@ h3 {
     background-size: cover;
 }
 
-.front {
+.vorne {
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
     background-color: #d02421;
@@ -154,29 +153,29 @@ h3 {
     color: white;
 }
 
-.front.font-white {
+.vorne.schrift-weiß {
     /* Setzt die Farbe der Nummer auf Weiß */
     color: white;
 }
 
-.front.font-black {
+.vorne.schrift-schwarz {
     /* Setzt die Farbe der Nummer auf Schwarz */
     color: black;
 }
 
-.back {
+.hinten {
     -webkit-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
     background-color: lightgray;
 }
 
-.xmas-calendar iframe {
+.advents-kalender iframe {
     width: 100%;
     height: 100%;
     margin-top: 10px;
 }
 
-.xmas-card-desc {
+.kalender-karte-beschr {
     text-align: center;
 }
 

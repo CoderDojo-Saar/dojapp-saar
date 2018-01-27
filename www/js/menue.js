@@ -2,7 +2,7 @@
 
 function createSideMenu(activeMenuId) {
     // Speichert das Menü
-    var htmlSideMenu = $('#sidemenu_menuitems');
+    var htmlSideMenu = $('#menue-eintraege');
 
     // Nur wenn das Menü existiert
     if (htmlSideMenu) {
@@ -11,16 +11,16 @@ function createSideMenu(activeMenuId) {
             // ... definiere die Menü-Struktur, ansonsten ...
             var menu = [
                 {id: 'start', label: 'Start', link: 'index.html', icon: 'home'},
-                {id: 'about', label: 'Über', link: 'about.html', icon: 'info'},
+                {id: 'ueber', label: 'Über', link: 'ueber.html', icon: 'info'},
                 {id: 'registration', label: 'Anmeldung', link: 'anmeldung.html', icon: 'mail'},
                 {id: 'geo', label: 'Anfahrt', link: 'geonavigation.html', icon: 'location'},
-                {id: 'xmascalendar', label: 'Adventskalender', link: 'weihnachtskalender.html', icon: 'star'},
+                {id: 'adventskalender', label: 'Adventskalender', link: 'adventskalender.html', icon: 'star'},
                 {},
-                {id: 'contact', label: 'Kontaktm&ouml;glichkeiten', link: 'kontaktmöglichkeiten.html', icon: 'reply'},
-                {id: 'gallery', label: 'Bildergalerie', link: 'bildergalerie.html', icon: 'image'},
+                {id: 'kontakt', label: 'Kontaktm&ouml;glichkeiten', link: 'kontaktmoeglichkeiten.html', icon: 'reply'},
+                {id: 'galerie', label: 'Bildergalerie', link: 'bildergalerie.html', icon: 'image'},
                 {},
-                {id: 'sponsors', label: 'Sponsoren', link: 'sponsoring.html', icon: 'bolt'},
-                {id: 'legal', label: 'Impressum', link: 'impressum.html', icon: 'world'}
+                {id: 'sponsoren', label: 'Sponsoren', link: 'sponsoren.html', icon: 'bolt'},
+                {id: 'impressum', label: 'Impressum', link: 'impressum.html', icon: 'world'}
             ];
 
             generateSideMenuItems(htmlSideMenu, menu, activeMenuId);
