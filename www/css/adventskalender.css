@@ -1,0 +1,150 @@
+.advents-kalender {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+}
+
+.kalender-karte {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.kalender-karte img {
+    max-width: 50%;
+    height: auto;
+}
+
+.kalender-karte--behind {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.dreh-container {
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    -webkit-perspective-origin: center right;
+    perspective-origin: center right;
+    height: 300px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 300px;
+    -ms-flex: 1 1 300px;
+    flex: 1 1 300px;
+    margin: 1px;
+}
+
+.dreh-container.ready:hover .dreher,
+.dreh-container.hover .dreher {
+    -webkit-transform: rotateY(-95deg);
+    transform: rotateY(-95deg);
+}
+
+.dreher {
+    -webkit-transition: -webkit-transform 0.5s linear;
+    transition: -webkit-transform 0.5s linear;
+    -o-transition: transform 0.5s linear;
+    transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+    position: relative;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 2;
+}
+
+.advents-kalender > .vorne,
+.advents-kalender > .hinten {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+.vorne {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    background-color: #d02421;
+    font-size: 180px;
+    color: white;
+
+    font-family: 'Mountains of Christmas', bold, sans-serif;
+}
+
+.vorne.schrift-weiß {
+    /* Setzt die Farbe der Nummer auf Weiß */
+    color: white;
+}
+
+.vorne.schrift-schwarz {
+    /* Setzt die Farbe der Nummer auf Schwarz */
+    color: black;
+}
+
+.hinten {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    background-color: lightgray;
+}
+
+.advents-kalender iframe {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.kalender-karte-beschr {
+    text-align: center;
+}
+
+.uk-nav-default {
+    font-size: 1.25rem;
+}
+
+.media-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.media-container .media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
