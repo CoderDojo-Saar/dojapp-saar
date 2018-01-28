@@ -1,7 +1,7 @@
 'use strict';
 
 function createSponsorList() {
-    var htmlSponsorList = $('#sponsorlist');
+    var htmlSponsorList = $('#sponsorenliste');
     if (htmlSponsorList.length > 0) {
         var sponsors = [
             {index: 11, link: "https://www.eurodata.de", name : 'eurodata'},
