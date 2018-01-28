@@ -196,3 +196,24 @@ h3 {
     /* Abstand überhalb einer section entfernt */
     padding-top: 0;
 }
+
+.uk-navbar {
+    border-bottom: 1px solid #dddddd;
+}
+
+#menue-eintraege {
+    padding-left: 12px;
+    padding-top: 10px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.logo-text {
+    margin-top: 12px;
+}
+
+.logo-bild {
+    margin-right: 10px;
+}

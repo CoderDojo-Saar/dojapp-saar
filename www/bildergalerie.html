@@ -25,31 +25,28 @@
 <body>
 <div class="uk-offcanvas-content">
 
-    <!-- Sidemenu -->
-    <nav style="border-bottom: 1px solid #dddddd;background-color:white" class="uk-navbar uk-navbar-container uk-margin"
-         uk-sticky>
+    <!-- menue -->
+    <nav class="uk-navbar uk-navbar-container uk-margin" uk-sticky>
         <div class="uk-navbar-left">
             <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle href="#menue"></a>
         </div>
 
         <div class="uk-navbar-center">
-            <img src="img/logo-nur-text-transparent.png" style="height: 50px;margin-top: 12px; "/>
+            <img src="img/logo-nur-text-transparent.png" class="logo logo-text">
         </div>
 
         <div class="uk-navbar-right">
-            <img src="img/logo-ohne-text-transparent.png" style="height: 50px;margin-right: 10px;"/>
+            <img src="img/logo-ohne-text-transparent.png" class="logo logo-bild">
         </div>
     </nav>
 
     <div id="menue" uk-offcanvas>
         <div class="uk-offcanvas-bar">
             <div id="menue-logo">
-                <img src="img/logo-nur-text-transparent.png" style="height: 50px; "/>
+                <img src="img/logo-nur-text-transparent.png" class="logo"/>
             </div>
             <button class="uk-offcanvas-close" type="button" uk-close></button>
-            <div style="padding-left: 20px;padding-top: 10px">
-                <ul id="menue-eintraege" class="uk-nav uk-nav-default"></ul>
-            </div>
+            <ul id="menue-eintraege" class="uk-nav uk-nav-default"></ul>
         </div>
     </div>
 
