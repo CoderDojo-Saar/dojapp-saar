@@ -78,8 +78,8 @@
     z-index: 2;
 }
 
-.advents-kalender > .vorne,
-.advents-kalender > .hinten {
+.vorne,
+.hinten {
     display: flex;
     flex-direction: column;
     justify-content: center;
