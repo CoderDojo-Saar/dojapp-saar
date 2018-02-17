@@ -2,6 +2,7 @@ body {
     font-family: "Open Sans", sans-serif;
     /* Gute Schriftgröße auf Mobilgeräten */
     font-size: 17px;
+    width: 100%;
 }
 
 h1 {
@@ -16,7 +17,7 @@ h3 {
     font-size: 1.4rem;
 }
 
-/* -- MENÜ -- */
+/* -- MENUE -- */
 .uk-offcanvas-bar {
     /* Entfernt Abstände */
     padding-left: 0;
@@ -58,8 +59,20 @@ h3 {
     margin-right: 10px;
 }
 
-/* -- SONSTIGES -- */
+/* -- COUNTDOWN -- */
+.uk-countdown {
+    text-align: center;
+}
 
+.uk-countdown-number {
+    font-size: 3em;
+}
+
+.uk-countdown-separator {
+    font-size: 2em;
+}
+
+/* -- SONSTIGES -- */
 #erstes-element {
     /* Fügt einen kleinen Abstand unter der Menüleiste ein.
      * TODO: Eleganter lösen
@@ -70,4 +83,5 @@ h3 {
 .uk-section {
     /* Abstand überhalb einer section entfernt */
     padding-top: 0;
+    padding-bottom: 20px;
 }
