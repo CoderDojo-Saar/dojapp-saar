@@ -85,3 +85,12 @@ h3 {
     padding-top: 0;
     padding-bottom: 20px;
 }
+
+#event-kalender-container {
+
+}
+
+#event-kalender-keine-verbindung {
+    margin-left: 45%;
+    width: 5%;
+}

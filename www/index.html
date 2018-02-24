@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <script src="cordova.js"></script>
     <title>CoderDojo - Start</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -83,14 +84,13 @@
                 Hier findet ihr kommende Veranstaltungen aus der Online-
                 und Kreativszene im Saarland.
             </p>
-            <div class="media-container">
-                <iframe class="media" width="100%" height="400px"
-                        src="https://www.google.com/calendar/embed?src=333dnsdjttm38oci9mju3o159g%40group.calendar.google.com&ctz=Europe/Berlin&mode=AGENDA"></iframe>
+            <div class="media-container" id="event-kalender-container">
             </div>
         </div>
     </section>
 </div>
 
 <script src="js/seite.js"></script>
+<script src="js/event-kalender.js"></script>
 </body>
 </html>
