@@ -1,9 +1,8 @@
-$(document).ready(onDocumentLoad);
 
-function onDocumentLoad() {
+$(document).ready(function () {
     // Erstellt das Menü
     createSideMenu(activeMenuId);
     if (typeof createSponsorList !== 'undefined') {
         createSponsorList();
     }
-}
+});
