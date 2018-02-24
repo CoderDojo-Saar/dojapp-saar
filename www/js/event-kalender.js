@@ -1,6 +1,6 @@
 'use strict';
 
-document.addEventListener("deviceready", function () {
+let tryLoadingEventCalendar = function() {
     let eventKalender = $("#event-kalender-container");
 
     if(navigator.connection.type === Connection.NONE) {
@@ -8,4 +8,10 @@ document.addEventListener("deviceready", function () {
     } else {
         eventKalender.html('<iframe class="media" width="100%" height="400px" src="https://www.google.com/calendar/embed?src=333dnsdjttm38oci9mju3o159g%40group.calendar.google.com&ctz=Europe/Berlin&mode=AGENDA"></iframe>')
     }
+};
+
+document.addEventListener("deviceready", function () {
+    tryLoadingEventCalendar();
+
+    document.addEventListener("online", tryLoadingEventCalendar, false);
 }, false);
