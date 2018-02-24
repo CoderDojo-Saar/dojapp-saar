@@ -14,7 +14,7 @@ $(document).ready(function () {
     let storageVersion = storage.getItem("version");
 
     if(storageVersion !== THIS_VERSION) {
-        $.getScript("js/showChangelog.js");
+        $.getScript("js/zeigeChangelog.js");
 
         storage.setItem("version", THIS_VERSION.toString());
     }
