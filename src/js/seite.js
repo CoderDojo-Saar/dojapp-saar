@@ -1,21 +1,30 @@
-'use strict';
+"use strict";
 
 const THIS_VERSION = "0.1";
 
-$(document).ready(function () {
-    let storage = window.localStorage;
+import UIkit from "uikit";
+import Icons from "uikit/dist/js/uikit-icons";
+import $ from "jquery";
 
-    // Erstellt das Menü
-    createSideMenu(activeMenuId);
-    if (typeof createSponsorList !== 'undefined') {
-        createSponsorList();
-    }
+import { createSideMenu } from "./menue";
 
-    let storageVersion = storage.getItem("version");
+require('uikit/dist/css/uikit.css');
+require('../css/style.css');
 
-    if(storageVersion !== THIS_VERSION) {
-        $.getScript("js/zeigeChangelog.js");
+$(document).ready(function() {
+  let storage = window.localStorage;
 
-        storage.setItem("version", THIS_VERSION.toString());
-    }
+  // Erstellt das Menü
+  createSideMenu(activeMenuId);
+  if (typeof createSponsorList !== "undefined") {
+    createSponsorList();
+  }
+
+  let storageVersion = storage.getItem("version");
+
+  if (storageVersion !== THIS_VERSION) {
+    $.getScript("js/zeigeChangelog.js");
+
+    storage.setItem("version", THIS_VERSION.toString());
+  }
 });

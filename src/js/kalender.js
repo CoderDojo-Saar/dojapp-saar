@@ -1,3 +1,5 @@
+require('../css/adventskalender.css');
+
 // Nimmt alle Objekte in der Seite, die das data-date Attribut besitzen
 document.querySelectorAll("[data-date]").forEach(
   function(el){

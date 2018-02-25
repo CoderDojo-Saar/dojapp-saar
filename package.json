@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
     "add-platforms": "cordova platform add ios && cordova platform add android",
     "remove-platforms": "cordova platform remove ios && cordova platform remove android",
     "update-platforms": "cordova platform update ios && cordova platform update android",
@@ -31,7 +32,9 @@
     "cordova-browser": "^5.0.3",
     "cordova-ios": "^4.5.4",
     "cordova-plugin-network-information": "^2.0.1",
-    "cordova-plugin-whitelist": "^1.3.3"
+    "cordova-plugin-whitelist": "^1.3.3",
+    "jquery": "^3.3.1",
+    "uikit": "^3.0.0-beta.40"
   },
   "cordova": {
     "platforms": [
@@ -43,5 +46,14 @@
       "cordova-plugin-whitelist": {},
       "cordova-plugin-network-information": {}
     }
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.10",
+    "style-loader": "^0.20.2",
+    "webpack": "^4.0.0",
+    "webpack-cli": "^2.0.8"
   }
 }
