@@ -1,3 +1,4 @@
+import UIkit from 'uikit';
 UIkit.modal.dialog('<div class="uk-modal-body">' +
         '<h2 class="uk-modal-title">Changelog</h2>' +
         '<ul class="uk-list uk-list-bullet">' +

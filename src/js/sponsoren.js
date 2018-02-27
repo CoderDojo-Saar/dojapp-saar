@@ -1,5 +1,6 @@
 'use strict';
-
+import $ from 'jquery';
+require('../css/sponsoren.css');
 function createSponsorList() {
     var htmlSponsorList = $('#sponsorenliste');
     if (htmlSponsorList.length > 0) {

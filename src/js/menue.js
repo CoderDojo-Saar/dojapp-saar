@@ -1,6 +1,7 @@
 // @ts-check
 
-function createSideMenu(activeMenuId) {
+import $ from 'jquery';
+export function createSideMenu(activeMenuId) {
     // Speichert das Menü
     var htmlSideMenu = $('#menue-eintraege');
 
