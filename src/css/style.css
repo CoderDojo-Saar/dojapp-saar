@@ -5,6 +5,10 @@ body {
     width: 100%;
 }
 
+h1, h2, h3, h4 {
+    margin-top: 20px;
+}
+
 h1 {
     font-size: 2.4rem;
 }
@@ -86,8 +90,8 @@ h3 {
     padding-bottom: 20px;
 }
 
-#event-kalender-container {
-
+#kalender-button {
+    width: 100%;
 }
 
 #event-kalender-keine-verbindung {

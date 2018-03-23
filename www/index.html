@@ -49,7 +49,7 @@
         <br> Das n&auml;chste Dojo findet am <b>24.02.18</b> in der LMS statt.
         (<a class="uk-link" href="geonavigation.html">Anfahrt hier</a>) statt. Bis dahin sind es noch:
 
-        <div id="dojo-countdown" uk-countdown="date: 2018-03-24T14:00:00+00:00">
+        <div id="dojo-countdown" uk-countdown="date: 2018-03-24T14:00:00">
             <span class="uk-countdown-number uk-countdown-days"></span>
             <span class="uk-countdown-separator">:</span>
             <span class="uk-countdown-number uk-countdown-hours"></span>
@@ -58,6 +58,8 @@
             <span class="uk-countdown-separator">:</span>
             <span class="uk-countdown-number uk-countdown-seconds"></span>
         </div>
+
+        <button type="button" class="uk-button uk-button-primary" id="kalender-button">In Kalender notieren</button>
     </div>
 
     <section class="uk-section uk-muted">
@@ -75,5 +77,17 @@
 
 <script src="js/seite.js"></script>
 <script src="js/event-kalender.js"></script>
+<script>
+    document.addEventListener("deviceready", function () {
+        $("#kalender-button").click(function () {
+            let startDate = new Date("2018-03-24T14:00:00");
+            let endDate = new Date("2018-03-24T17:00:00");
+
+            window.plugins.calendar.createEventInteractively("CoderDojo Saar", "Landesmedienanstalt Saarbrücken", "", startDate, endDate, function () {
+                navigator.notification.alert("Der Eintrag wurde erstellt.", null, "Erstellt", "Okay");
+            });
+        });
+    }, false);
+</script>
 </body>
 </html>
