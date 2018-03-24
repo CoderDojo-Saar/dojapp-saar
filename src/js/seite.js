@@ -28,3 +28,19 @@ $(document).ready(function() {
     storage.setItem("version", THIS_VERSION.toString());
   }
 });
+
+function checkInternetConnection() {
+    return navigator.connection.type !== Connection.NONE;
+}
+
+function requireInternetConnection() {
+    let internetConnection = checkInternetConnection();
+
+    if(!internetConnection) {
+        navigator.notification.alert("Diese Funktion benötigt eine Internet-Verbindung!", null, "Internet-Verbindung erforderlich", "Okay");
+    }
+
+    return internetConnection;
+}
+
+export default { checkInternetConnection, requireInternetConnection };
